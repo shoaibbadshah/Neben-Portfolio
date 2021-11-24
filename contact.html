@@ -47,7 +47,7 @@
           <div class="navbar-end">
             <div class="navbar-item">
               <p class="buttons">
-                <a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset" onclick="document.getElementById('invisible-recaptcha-form').reset();">
+                <a class="button is-medium tooltip is-tooltip-bottom" data-tooltip="Reset" onclick="document.getElementById('form').reset();">
                   <span class="icon is-small">
                     <i class="fas fa-undo-alt"></i>
                   </span>
@@ -80,13 +80,13 @@
             document.getElementById("invisible-recaptcha-form").submit();
             }
           </script>
-          <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/a409ffd1294b" method="POST">
+          <form id="form" accept-charset="UTF-8" action="https://usebasin.com/f/a409ffd1294b" method="POST">
             <div class="columns is-centered">
               <div class="column is-half">
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="name" type="text" required />
+                    <input class="input is-large" name="name" type="text" required>
                   </div>
                 </div>
               </div>
@@ -94,23 +94,11 @@
                 <div class="field">
                   <label class="label">Email</label>
                   <div class="control is-expanded">
-                    <input class="input is-large" name="email" type="email" required />
+                    <input class="input is-large" name="email" type="email" required>
                   </div>
                 </div>
               </div>
             </div>
-
-            <!-- <div class="columns is-centered">
-              <div class="column">
-                <div class="field">
-                  <label class="label">Mobile Number</label>
-                  <div class="control is-expanded">
-                    <input class="input is-large" name="phone" type="text" required>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-
             <div class="columns is-centered">
               <div class="column">
                 <div class="field">
@@ -121,7 +109,6 @@
                 </div>
               </div>
             </div>
-
             <div class="columns is-centered">
               <div class="column">
                 <div class="field">
@@ -133,7 +120,7 @@
                 <div class="field is-hidden">
                   <label class="is-hidden"></label>
                   <div class="control is-expanded is-hidden">
-                    <input class="is-hidden" name="bot_vortex" type="hidden">
+                    <input class="is-hidden" name="_gotcha" type="hidden">
                   </div>
                 </div>
               </div>
@@ -142,12 +129,14 @@
               <div class="column is-one-third">
                 <div class="field">
                   <div class="control">
-                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback="onSubmit" data-badge="inline" type="submit">Submit</button>
+                    <button class="button is-primary is-outlined is-medium is-fullwidth is-rounded">Submit</button>
                   </div>
                 </div>
               </div>
             </div>
           </form>
+
+
         </div>
       </section>
     </div>
