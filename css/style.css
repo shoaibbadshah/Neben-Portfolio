@@ -1,0 +1,11 @@
+.wholeBorder {
+  border: 2px solid black;
+  box-shadow: 1px 1px 1px 1px rgba(27, 27, 27, 0.664);
+}
+
+.box_img {
+  object-fit: cover;
+}
+
+.wholeBorder img {
+}
