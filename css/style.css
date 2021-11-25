@@ -4,8 +4,15 @@
 }
 
 .box_img {
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .wholeBorder img {
+}
+
+.size {
+  width: 300px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
 }
